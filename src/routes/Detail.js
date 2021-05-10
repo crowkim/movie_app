@@ -1,4 +1,5 @@
 import React from "react";
+import "./Detail.css";
 
 class Detail extends React.Component {
   componentDidMount() {
@@ -12,7 +13,7 @@ class Detail extends React.Component {
     const { location } = this.props;
     if (location.state) {
       return (
-        <div>
+        <div className="Detail__container">
           <h2>{location.state.title}</h2>;
           <span>{location.state.summary}</span>
         </div>
